@@ -9,7 +9,7 @@ h1{
     font-size: 35px;
 }
 .contents{
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
 }
 /*menu styles*/
@@ -213,7 +213,7 @@ button a:hover{
 } 
  @media screen and (max-width: 768px){
     .contents{
-        width: 100%;
+        max-width: 768px;
         margin: 0 auto;
     }
     .menu{
@@ -222,16 +222,27 @@ button a:hover{
     .menu .contents a:nth-of-type(2),.menu .contents a:nth-of-type(3),.menu .contents a:nth-of-type(4){
         display: none;
     }
-    .baner{
-        max-width: 760px;  
-    } 
+
     .layer{
         overflow-wrap: break-word;
     }
     .workers{
         display: inline-block;
         align-items: center;
+        width: 600px;
     }
+    .workers .photo{
+        margin: 0px;
+    }
+    .description{
+        width: 600px;
+    }
+    .description p{
+        text-align: left;
+        width: 600px;
+        margin: 0;
+    }
+   
     /* thirdSection */
     .thirdSection .contents{
         overflow-wrap: break-word;
@@ -245,7 +256,16 @@ button a:hover{
     }
 
     /* footer */
-    .footer p{
-        width: 100%;
+    .footer .contents{
+        display: block;
+        align-items: center; 
     }
-} 
+    .footer .contents{
+        display: block;
+        align-items: center; 
+    }
+    .socialMedia{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
