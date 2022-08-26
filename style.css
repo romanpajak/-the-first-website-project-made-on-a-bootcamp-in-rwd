@@ -255,6 +255,14 @@ button a:hover{
         align-items: center;
         width: auto;
     }
+    .box{
+        height: 348px;
+        width: 343px;
+    }
+    .circle{
+        left: -209px;
+        top: -172px;
+    }
     /* footer */
 
     .footer .contents{
