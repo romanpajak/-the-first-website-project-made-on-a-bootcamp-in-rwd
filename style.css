@@ -11,7 +11,10 @@ h1{
 .contents{
     max-width: 960px;
     margin: 0 auto;
+    width: 100%;
+    
 }
+
 /*menu styles*/
 .menu{
     height: 70px;
@@ -105,6 +108,7 @@ button a:hover{
 }  
 .workers{
     width: auto;
+    /* width: 100%; */
     height: auto;
     display: flex;
     align-items: center;
@@ -123,6 +127,7 @@ button a:hover{
 }
 .description{
     width: 800px;
+    /* max-width: 600px; */
 }
 .subtitle{
     font-weight: bold;
@@ -211,61 +216,54 @@ button a:hover{
     display: flex;
     margin-left: auto;
 } 
+/* 768px*/
  @media screen and (max-width: 768px){
     .contents{
-        max-width: 768px;
+        width: 98%;
         margin: 0 auto;
-    }
-    .menu{
-        width: 100%;
     }
     .menu .contents a:nth-of-type(2),.menu .contents a:nth-of-type(3),.menu .contents a:nth-of-type(4){
         display: none;
     }
-
-    .layer{
-        overflow-wrap: break-word;
-    }
     .workers{
         display: inline-block;
         align-items: center;
-        width: 600px;
-    }
-    .workers .photo{
-        margin: 0px;
+        /* max-width: 600px; */
+        width: 100%;
     }
     .description{
-        width: 600px;
+        width: 100%;
     }
-    .description p{
+     .subtitle{
         text-align: left;
-        width: 600px;
-        margin: 0;
+        margin: 15px 0;
+     }
+     .description p:nth-of-type(2){
+        text-align: justify;
+     }
+    .workers:nth-of-type(odd) div.photo{
+        margin: 0 auto;
     }
-   
+    .workers:nth-of-type(even) div.photo{
+        margin: 0 auto;
+    }
     /* thirdSection */
-    .thirdSection .contents{
-        overflow-wrap: break-word;
-    }
     .boxContainer{
-        display:block;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
+        width: auto;
     }
-    .photo{
-        margin: 0;
-    }
-
     /* footer */
+
     .footer .contents{
         display: block;
-        align-items: center; 
-    }
-    .footer .contents{
-        display: block;
-        align-items: center; 
+        text-align: center;
     }
     .socialMedia{
         display: flex;
         align-items: center;
         justify-content: center;
     }
+}
